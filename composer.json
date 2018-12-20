@@ -1,5 +1,5 @@
 {
-    "name": "Projetos2/monitor-bundle",
+    "name": "novosga/monitor-bundle",
     "license": "MIT",
     "type": "novosga-module",
     "autoload": {

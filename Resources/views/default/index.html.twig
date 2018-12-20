@@ -107,6 +107,7 @@
                                     <tr>
                                         <th>{{ 'label.ticket.number'|trans }}</th>
                                         <th>{{ 'label.service'|trans }}</th>
+                                        <th>{{ 'label.priority'|trans }}</th>
                                         <th>{{ 'label.ticket.arrival_date'|trans }}</th>
                                         <th>{{ 'label.ticket.start_date'|trans }}</th>
                                         <th>{{ 'label.ticket.end_date'|trans }}</th>
@@ -125,6 +126,9 @@
                                             </td>
                                             <td>
                                                 {{atendimento.servico.nome}}
+                                            </td>
+                                            <td>
+                                                {{atendimento.prioridade.nome}}
                                             </td>
                                             <td>
                                                 <span v-if="atendimento.dataChegada">

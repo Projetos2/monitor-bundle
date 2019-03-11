@@ -108,7 +108,6 @@
                         		minutos += horaDate.getMinutes();
                         		segundos += horaDate.getSeconds(); 
                         		
-                        		
                             })
                         })
                         
@@ -120,12 +119,17 @@
                         		return k
                         	}
                         }
-                        
+                        self.totalAtendimentosPendentes = somaSenhas
+                        if(self.totalAtendimentosPendentes >= 1){
                         self.tempoMedioEspera = formataData(horas/somaSenhas) 
                         	+ ':' + formataData(minutos/somaSenhas) 
                         	+ ':' + formataData(segundos/somaSenhas);
+                        }else{
+                        	self.tempoMedioEspera = formataData(0) 
+                        	+ ':' + formataData(0) 
+                        	+ ':' + formataData(0);
+                        }
                         
-                        self.totalAtendimentosPendentes = somaSenhas
                         
                         self.tempoMaximoEspera = formataData(maiorHoras) 
                     	+ ':' + formataData(maiorMinutos) 
